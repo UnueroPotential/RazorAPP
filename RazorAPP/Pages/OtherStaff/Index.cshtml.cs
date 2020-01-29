@@ -9,7 +9,6 @@ using RazorAPP.Data;
 
 namespace RazorAPP
 {
-
     public class IndexModel : PageModel
     {
         private readonly RazorAPP.Data.ApplicationDbContext _context;
@@ -19,11 +18,11 @@ namespace RazorAPP
             _context = context;
         }
 
-        public IList<MainAdmin> MainAdmin { get;set; }
+        public IList<MainStaff> MainStaff { get;set; }
 
         public async Task OnGetAsync()
         {
-            MainAdmin = await _context.MainAdmins.ToListAsync();
+            MainStaff = await _context.MainStaffs.ToListAsync();
         }
     }
 }
