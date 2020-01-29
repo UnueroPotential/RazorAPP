@@ -9,6 +9,7 @@ using RazorAPP.Data;
 
 namespace RazorAPP
 {
+    //Not running
     public class IndexModel : PageModel
     {
         private readonly RazorAPP.Data.ApplicationDbContext _context;
